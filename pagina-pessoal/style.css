@@ -284,3 +284,12 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
 .foto-destaque-dupla::after {
   content: none;
 }
+
+#xadrez .faixa-fotos img:nth-child(3) {
+  object-fit: contain;
+}
+
+#momentos .carrossel-slide.ativo {
+  display: block;
+  opacity: 1;
+}

@@ -87,9 +87,11 @@
         <h2 class="titulo-secao text-white">Xadrez</h2>
         <p class="subtitulo text-white-50">Torneios, medalhas e muita concentração.</p>
         <div class="faixa-fotos">
-          <img src="img/foto05.png" alt="Grupo com medalhas">
           <img src="img/foto08.png" alt="Clube de Xadrez">
           <img src="img/foto06.png" alt="Partida de xadrez">
+          <img src="img/foto02.png" alt="Partida de xadrez">
+          <img src="img/foto05.png" alt="Grupo de Medalhistas">
+          <img src="img/foto50.jpeg" alt="Grupo de Medalhistas">
         </div>
       </div>
     </section>
@@ -214,9 +216,10 @@
       <h2 class="titulo-secao">Momentos</h2>
       <p class="subtitulo-secao">Registros que contam um pouco da minha história.</p>
       <div class="carrossel-container">
-        <div class="carrossel-slide fade"><img src="img/foto20.png" alt="Gustavo Polo Preto"></div>
+        <div class="carrossel-slide fade ativo"><img src="img/foto20.png" alt="Gustavo Polo Preto"></div>
         <div class="carrossel-slide fade"><img src="img/foto01.png" alt="Origamis"></div>
-        <div class="carrossel-slide fade"><img src="img/foto02.png" alt="Medalha"></div>
+        <div class="carrossel-slide fade"><img src="img/foto03.png" alt="Outros Inters"></div>
+        <div class="carrossel-slide fade"><img src="img/foto04.png" alt=" Outros Inters2"></div>
         <div class="carrossel-slide fade"><img src="img/foto09.png" alt="Café"></div>
         <div class="carrossel-slide fade"><img src="img/foto10.png" alt="Selfie"></div>
         <div class="carrossel-slide fade"><img src="img/foto11.png" alt="Amigos"></div>
@@ -224,6 +227,39 @@
         <div class="carrossel-slide fade"><img src="img/foto15.png" alt="Chamas"></div>
         <div class="carrossel-slide fade"><img src="img/foto17.png" alt="Laboratório"></div>
         <div class="carrossel-slide fade"><img src="img/foto19.png" alt="Estudo"></div>
+        <div class="carrossel-slide fade"><img src="img/WhatsApp Image 2026-11-14 at 22.06.29.jpeg" alt="Estudo"></div>
+        <div class="carrossel-slide fade"><img src="img/foto21.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto22.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto23.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto24.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto25.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto26.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto27.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto28.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto29.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto30.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto31.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto32.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto33.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto34.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto35.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto36.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto37.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto38.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto39.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto40.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto41.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto42.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto43.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto44.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto45.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto46.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto47.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto48.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto49.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto51.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto52.jpeg" alt="Café"></div>
+        <div class="carrossel-slide fade"><img src="img/foto53.jpeg" alt="Café"></div>  
       </div>
     </section>
 
@@ -293,5 +329,20 @@
   </main>
 
   <footer class="rodape"></footer>
+
+<script>
+  const slides = document.querySelectorAll('#momentos .carrossel-slide');
+
+  if (slides.length > 1) {
+    let atual = 0;
+
+    setInterval(() => {
+      slides[atual].classList.remove('ativo');
+      atual = (atual + 1) % slides.length;
+      slides[atual].classList.add('ativo');
+    }, 4000);
+  }
+</script>
+
 </body>
 </html>
