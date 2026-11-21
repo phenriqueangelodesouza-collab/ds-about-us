@@ -2,15 +2,15 @@
    TEMA LUPIN - PORTFÓLIO PREMIUM
    ========================================= */
 :root {
-  --dourado: #d4af37;
-  --dourado-claro: #f3e5ab;
-  --azul-meia-noite: #0a1128;
-  --azul-profundo: #001f3f;
+  --dourado: #F7C80B;
+  --dourado-claro: #F7C80B;
+  --azul-meia-noite: #1D0935;
+  --azul-profundo: #6410C9;
   --preto-fosco: #050505;
-  --cinza-texto: #a0a0a0;
-  --branco: #ffffff;
-  --fundo-site: #0a1128;
-  --sombra-dourada: 0 10px 30px rgba(212, 175, 55, 0.15);
+  --cinza-texto: rgba(255, 255, 255, 0.85);
+  --branco: #FFFFFF;
+  --fundo-site: #1D0935;
+  --sombra-dourada: 0 10px 30px rgba(247, 200, 11, 0.15);
   --transicao: all 0.3s ease;
 }
 
@@ -27,8 +27,8 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.03), transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(0, 31, 63, 0.5), transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(247, 200, 11, 0.03), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(100, 16, 201, 0.5), transparent 50%);
 }
 
 h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--branco); }
@@ -48,9 +48,9 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
    ========================================= */
 .topo {
   display: flex; justify-content: space-between; align-items: center;
-  padding: 1rem 5%; background: rgba(10, 17, 40, 0.85);
+  padding: 1rem 5%; background: rgba(29, 9, 53, 0.85);
   backdrop-filter: blur(15px); position: sticky; top: 0; z-index: 1000;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2); transition: var(--transicao);
+  border-bottom: 1px solid rgba(247, 200, 11, 0.2); transition: var(--transicao);
 }
 .topo.scrolled { padding: 0.6rem 5%; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid var(--dourado); }
 .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 800; color: var(--dourado); text-decoration: none; }
@@ -68,12 +68,12 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
 .hero-conteudo { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 2; }
 .hero-texto { flex: 1; }
 .hero-texto .tag {
-  display: inline-block; background: rgba(212, 175, 55, 0.1); color: var(--dourado);
-  padding: 0.5rem 1rem; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.3);
+  display: inline-block; background: rgba(247, 200, 11, 0.1); color: var(--dourado);
+  padding: 0.5rem 1rem; border-radius: 4px; border: 1px solid rgba(247, 200, 11, 0.3);
   font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px;
 }
 .titulo-animado { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; color: var(--branco); }
-.destaque-texto { color: var(--dourado); text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+.destaque-texto { color: var(--dourado); text-shadow: 0 0 20px rgba(247, 200, 11, 0.3); }
 .lead { font-size: 1.1rem; color: var(--cinza-texto); margin-bottom: 2.5rem; max-width: 500px; }
 .hero-botoes { display: flex; gap: 1rem; }
 
@@ -93,9 +93,9 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
 .hero-galeria { flex: 1; display: flex; justify-content: center; gap: 1.5rem; position: relative; }
 .foto-destaque-dupla {
   width: 45%; border-radius: 8px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-  border: 2px solid rgba(212, 175, 55, 0.3); transition: var(--transicao); background: var(--azul-profundo); position: relative;
+  border: 2px solid rgba(247, 200, 11, 0.3); transition: var(--transicao); background: var(--azul-profundo); position: relative;
 }
-.foto-destaque-dupla::after { content: ''; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border: 1px solid rgba(212, 175, 55, 0.5); pointer-events: none; z-index: 2; }
+.foto-destaque-dupla::after { content: ''; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border: 1px solid rgba(247, 200, 11, 0.5); pointer-events: none; z-index: 2; }
 .foto-destaque-dupla img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3 / 4; filter: sepia(20%) contrast(1.1); transition: var(--transicao); }
 .foto-destaque-dupla:hover img { filter: sepia(0%) contrast(1); transform: scale(1.05); }
 .foto-1 { transform: rotate(-5deg) translateY(10px); z-index: 1; }
@@ -108,41 +108,41 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
    ========================================= */
 .grade-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .card-info {
-  background: rgba(0, 31, 63, 0.4); backdrop-filter: blur(10px); padding: 2rem; 
-  border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.1); transition: var(--transicao); position: relative; overflow: hidden;
+  background: rgba(100, 16, 201, 0.4); backdrop-filter: blur(10px); padding: 2rem; 
+  border-radius: 8px; border: 1px solid rgba(247, 200, 11, 0.1); transition: var(--transicao); position: relative; overflow: hidden;
 }
-.card-info:hover { transform: translateY(-5px); border-color: var(--dourado); background: rgba(0, 31, 63, 0.6); box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
-.icone { font-size: 2.5rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); }
+.card-info:hover { transform: translateY(-5px); border-color: var(--dourado); background: rgba(100, 16, 201, 0.6); box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+.icone { font-size: 2.5rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px rgba(247, 200, 11, 0.5)); }
 .card-time { grid-column: 1 / -1; display: flex; flex-direction: column; }
 .card-time img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-top: 1rem; }
-#destaque::before { content: '♠'; position: absolute; top: 10px; right: 15px; font-size: 3rem; color: rgba(212, 175, 55, 0.1); font-family: serif; pointer-events: none; }
+#destaque::before { content: '♠'; position: absolute; top: 10px; right: 15px; font-size: 3rem; color: rgba(247, 200, 11, 0.1); font-family: serif; pointer-events: none; }
 
 /* =========================================
    XADREZ
    ========================================= */
-.secao-xadrez { background-color: var(--preto-fosco); color: white; position: relative; width: 100%; max-width: 100%; padding: 6rem 5%; border-top: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+.secao-xadrez { background-color: var(--preto-fosco); color: white; position: relative; width: 100%; max-width: 100%; padding: 6rem 5%; border-top: 1px solid rgba(247, 200, 11, 0.2); border-bottom: 1px solid rgba(247, 200, 11, 0.2); }
 .secao-xadrez::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, transparent, var(--dourado), transparent); }
 .secao-xadrez .titulo-secao { color: var(--dourado); }
 .faixa-fotos { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem; }
 .faixa-fotos img { width: 30%; min-width: 250px; height: 300px; object-fit: cover; border-radius: 4px; filter: grayscale(100%) brightness(0.7); transition: var(--transicao); border: 1px solid rgba(255,255,255,0.1); }
-.faixa-fotos img:hover { filter: grayscale(0%) brightness(1); transform: scale(1.05); border-color: var(--dourado); box-shadow: 0 10px 30px rgba(212,175,55,0.2); z-index: 2; }
+.faixa-fotos img:hover { filter: grayscale(0%) brightness(1); transform: scale(1.05); border-color: var(--dourado); box-shadow: 0 10px 30px rgba(247, 200, 11,0.2); z-index: 2; }
 
 /* =========================================
    SALA DE JOGOS E FILMES
    ========================================= */
 .grade-jogos { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; padding: 1rem 0; }
-.card-jogo { position: relative; border-radius: 8px; overflow: hidden; background: var(--azul-profundo); border: 1px solid rgba(212, 175, 55, 0.2); transition: var(--transicao); cursor: pointer; display: flex; flex-direction: column; }
+.card-jogo { position: relative; border-radius: 8px; overflow: hidden; background: var(--azul-profundo); border: 1px solid rgba(247, 200, 11, 0.2); transition: var(--transicao); cursor: pointer; display: flex; flex-direction: column; }
 .card-jogo img { width: 100%; height: 220px; object-fit: cover; filter: grayscale(20%) contrast(1.1); transition: var(--transicao); }
-.card-jogo span { display: block; text-align: center; padding: 0.8rem 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--cinza-texto); background: rgba(5, 5, 5, 0.9); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: auto; }
+.card-jogo span { display: block; text-align: center; padding: 0.8rem 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--cinza-texto); background: rgba(5, 5, 5, 0.9); border-top: 1px solid rgba(247, 200, 11, 0.1); margin-top: auto; }
 .card-jogo:hover { transform: translateY(-5px); border-color: var(--dourado); box-shadow: 0 15px 30px rgba(0,0,0,0.6); z-index: 2; }
 .card-jogo:hover img { filter: grayscale(0%) contrast(1.1); }
 .card-jogo:hover span { color: var(--dourado); background: var(--preto-fosco); }
 
 .grid-curiosidades { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 4rem; }
-.card-curiosidade { background: rgba(0, 31, 63, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(212, 175, 55, 0.2); padding: 2rem; border-radius: 12px; transition: var(--transicao); }
+.card-curiosidade { background: rgba(100, 16, 201, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(247, 200, 11, 0.2); padding: 2rem; border-radius: 12px; transition: var(--transicao); }
 .card-curiosidade:hover { border-color: var(--dourado); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-.curio-icone { font-size: 2.5rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3)); }
-.card-curiosidade h3 { font-family: 'Inter', sans-serif; font-size: 1.2rem; color: var(--dourado); margin-bottom: 1rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 0.5rem; }
+.curio-icone { font-size: 2.5rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px rgba(247, 200, 11, 0.3)); }
+.card-curiosidade h3 { font-family: 'Inter', sans-serif; font-size: 1.2rem; color: var(--dourado); margin-bottom: 1rem; border-bottom: 1px solid rgba(247, 200, 11, 0.2); padding-bottom: 0.5rem; }
 .card-curiosidade p { font-size: 0.95rem; color: var(--cinza-texto); line-height: 1.6; margin-bottom: 1rem; }
 .card-curiosidade strong { color: var(--branco); }
 
@@ -150,11 +150,11 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
 .comidas-imagens, .herois-imagens, .musicas-imagens, .tech-imagens, .materias-imagens {
   display: flex; gap: 10px; margin-top: 1rem; flex-wrap: wrap;
 }
-.comidas-imagens img { width: 30%; height: 70px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.3); }
-.herois-imagens img { width: 30%; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.3); }
-.musicas-imagens img { width: 30%; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.3); }
+.comidas-imagens img { width: 30%; height: 70px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(247, 200, 11, 0.3); }
+.herois-imagens img { width: 30%; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(247, 200, 11, 0.3); }
+.musicas-imagens img { width: 30%; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid rgba(247, 200, 11, 0.3); }
 .tech-imagens img { width: 15%; height: 40px; object-fit: contain; filter: grayscale(50%); transition: var(--transicao); }
-.materias-imagens img { width: 22%; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.3); }
+.materias-imagens img { width: 22%; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid rgba(247, 200, 11, 0.3); }
 
 .comidas-imagens img:hover, .herois-imagens img:hover, .musicas-imagens img:hover, .materias-imagens img:hover { transform: scale(1.1); border-color: var(--dourado); }
 .tech-imagens img:hover { filter: grayscale(0%); transform: scale(1.2); }
@@ -164,12 +164,12 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
    ========================================= */
 .titulo-filmes { text-align: center; font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--branco); margin-bottom: 2rem; }
 .galeria-filmes { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; }
-.filme-card { background: var(--preto-fosco); border-radius: 8px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.1); transition: var(--transicao); text-align: center; cursor: pointer; }
+.filme-card { background: var(--preto-fosco); border-radius: 8px; overflow: hidden; border: 1px solid rgba(247, 200, 11, 0.1); transition: var(--transicao); text-align: center; cursor: pointer; }
 .filme-card img { width: 100%; height: 260px; object-fit: cover; transition: var(--transicao); border-bottom: 2px solid transparent; }
 .filme-card span { display: block; padding: 0.8rem; font-size: 0.85rem; font-weight: 600; color: var(--cinza-texto); }
 .filme-card:hover { transform: translateY(-5px); border-color: var(--dourado); box-shadow: 0 10px 20px rgba(0,0,0,0.6); z-index: 2; }
 .filme-card:hover img { border-bottom-color: var(--dourado); }
-.filme-card:hover span { color: var(--dourado); background: rgba(212, 175, 55, 0.1); }
+.filme-card:hover span { color: var(--dourado); background: rgba(247, 200, 11, 0.1); }
 
 /* =========================================
    CARROSSEL DE MOMENTOS
@@ -180,7 +180,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
   margin: auto;
   border-radius: 12px;
   overflow: hidden;
-  border: 2px solid rgba(212, 175, 55, 0.3);
+  border: 2px solid rgba(247, 200, 11, 0.3);
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -210,15 +210,15 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
 /* =========================================
    SONHOS
    ========================================= */
-.card-lugar { border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 12px; overflow: hidden; background-size: cover; background-position: center; position: relative; min-height: 280px; transition: var(--transicao); cursor: pointer; }
-.card-lugar::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(5, 5, 5, 0.95) 0%, rgba(10, 17, 40, 0.4) 60%, transparent 100%); transition: var(--transicao); z-index: 1; }
+.card-lugar { border: 1px solid rgba(247, 200, 11, 0.3); border-radius: 12px; overflow: hidden; background-size: cover; background-position: center; position: relative; min-height: 280px; transition: var(--transicao); cursor: pointer; }
+.card-lugar::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(5, 5, 5, 0.95) 0%, rgba(29, 9, 53, 0.4) 60%, transparent 100%); transition: var(--transicao); z-index: 1; }
 .card-lugar:hover { transform: translateY(-5px); border-color: var(--dourado); box-shadow: 0 15px 30px rgba(0,0,0,0.6); }
-.card-lugar:hover::before { background: linear-gradient(to top, rgba(5, 5, 5, 0.95) 0%, rgba(212, 175, 55, 0.2) 60%, transparent 100%); }
+.card-lugar:hover::before { background: linear-gradient(to top, rgba(5, 5, 5, 0.95) 0%, rgba(247, 200, 11, 0.2) 60%, transparent 100%); }
 .card-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; z-index: 2; transform: translateY(10px); transition: var(--transicao); }
 .card-lugar:hover .card-overlay { transform: translateY(0); }
 .lugar-titulo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--dourado); margin-bottom: 0.3rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 .lugar-desc { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #ddd; margin: 0; line-height: 1.4; }
-.meta { margin-top: 3rem; font-family: 'Playfair Display', serif; font-size: 1.5rem; text-align: center; color: var(--dourado-claro); padding: 2rem; background: rgba(212, 175, 55, 0.05); border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); }
+.meta { margin-top: 3rem; font-family: 'Playfair Display', serif; font-size: 1.5rem; text-align: center; color: var(--dourado-claro); padding: 2rem; background: rgba(247, 200, 11, 0.05); border-radius: 8px; border: 1px solid rgba(247, 200, 11, 0.2); }
 
 /* =========================================
    RODAPÉ (Aumentado)
@@ -227,7 +227,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
   background: var(--preto-fosco); 
   padding: 4rem 1rem; /* Aumentado */
   margin-top: 4rem; 
-  border-top: 1px solid rgba(212, 175, 55, 0.2); 
+  border-top: 1px solid rgba(247, 200, 11, 0.2); 
 }
 
 /* =========================================
@@ -237,12 +237,12 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
   position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;
   border-radius: 50%; background-color: transparent; color: var(--dourado);
   border: 1px solid var(--dourado); font-size: 1.5rem; cursor: pointer; 
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 15px rgba(247, 200, 11, 0.2);
   opacity: 0; visibility: hidden; transform: translateY(20px); transition: all 0.4s ease;
   z-index: 2000; display: flex; justify-content: center; align-items: center;
 }
 #btn-topo.visivel { opacity: 1; visibility: visible; transform: translateY(0); }
-#btn-topo:hover { background-color: var(--dourado); color: var(--preto-fosco); box-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+#btn-topo:hover { background-color: var(--dourado); color: var(--preto-fosco); box-shadow: 0 0 25px rgba(247, 200, 11, 0.6); }
 
 .escondido { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
 .mostrar { opacity: 1; transform: translateY(0); }
@@ -275,4 +275,12 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: va
   .card-jogo span { font-size: 0.75rem; padding: 0.6rem 0.3rem; }
   .carrossel-slide { height: 300px; }
   .tech-imagens img { width: 20%; height: 30px; }
+}
+
+.foto-destaque-dupla {
+  border: 3px solid #D6B650;
+}
+
+.foto-destaque-dupla::after {
+  content: none;
 }
