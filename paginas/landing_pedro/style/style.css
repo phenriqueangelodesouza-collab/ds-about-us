@@ -213,6 +213,7 @@ nav a:focus-visible{
   display: block;
   width: 1.5rem;
   height: auto;
+  filter: brightness(0) invert(1) sepia(1) saturate(5);
 }
 
 #footer-links a:focus-visible {
@@ -221,11 +222,16 @@ nav a:focus-visible{
 }
 
 #footer-id {
-  background-color: #f3e8ff;
-  color: #281341;
+  background-color: #581ea0;
+  color: #F7C80B;
   font-weight: bold;
 }
 
 html {
   scroll-behavior: smooth; /*deixa a rolagem dos links mais suave, isso na página inteira*/
+}
+
+html::selection{
+  background-color: #F7C80B;
+  color: #24201c;
 }
