@@ -106,6 +106,14 @@ Desenvolver um site colaborativo utilizando conhecimentos de desenvolvimento web
 
 O projeto permite que cada integrante personalize sua apresentação e pratique habilidades de desenvolvimento front-end.
 
+## 🌐 Acesse o site
+
+O projeto está publicado no GitHub Pages e pode ser acessado diretamente pelo navegador, sem necessidade de instalação.
+
+🔗 **[Clique aqui para acessar o DS About Us](https://phenriqueangelodesouza-collab.github.io/ds-about-us/)**
+
+A página inicial apresenta os integrantes do grupo e permite navegar pelas páginas pessoais de cada um.
+
 ## 📄 Licença
 
 Este projeto está disponível sob a [Licença MIT](LICENSE).
