@@ -230,3 +230,8 @@ nav a:focus-visible{
 html {
   scroll-behavior: smooth; /*deixa a rolagem dos links mais suave, isso na página inteira*/
 }
+
+html::selection{
+  background-color: #F7C80B;
+  color: #24201c;
+}
