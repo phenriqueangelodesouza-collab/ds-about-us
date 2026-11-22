@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedroca</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=".\style\style.css">
+
 </head>
 <body>
     <header class="header-class" id="header-id">
-        <p>Pedro</p>
+        <a href="#main-id" id="pedro-link">Pedro</a>
         <nav>
             <a href="#curiosidades">curiosidades</a>
-            <a href="#hobbies">hobbies</a>
-            <a href="#quero-conhecer">quero conhecer</a>
-            <a href="#ja-conheco">já conheço</a>    
+            <a href="#ja-fui">Já conheço</a>
+            <a href="#quero-conhecer">quero conhecer</a>    
         </nav>
     </header>
 
@@ -23,14 +27,14 @@
             <!--descrição do inicio da página-->
             <div class="perfil-class-descricao">
                 <h1>
-                    Prazer, me chamo <br> Pedro
+                    Prazer, me chamo <div id="pedro"> Pedro.</div>
                 </h1>
                 <p>Estudante de desenvolvimento da Germinare Tech. Tenho 16 anos, moro no bairro do Morro Doce e trabalho na PicPay, como auxiliar de desenvolvimento.</p>
             </div>
 
             <!--minha foto-->
             <div class="perfil-class-foto">
-                <img src=".assets\praia.png" alt="Imagem de Pedro em Ilha Bela">
+                <img src="assets/praia.png" alt="Imagem de Pedro em Ilha Bela">
             </div>
        </section>
 
@@ -41,14 +45,14 @@
             
                 <!--Inter-->
                 <article class="cards">
-                        <div class="imagem">
+                        <div class="imagem" id="mot">
                             <img src=".\assets\mot.png" alt="imagem do logo do projeto">
                         </div>
 
                         <div class="texto">
                             <h3>Interdisciplinar</h3>
                             <p>O máximo de resultado com o mínimo de desperdício - Mottainai</p>
-                            <a href="https://github.com/Mottainai-One/Mottainai-Primeiro-Ano" target="_blank">Conheça nosso projeto!</a>
+                            <a href="https://mottainai-primeiro-ano.onrender.com/home.html" target="_blank">Conheça nosso projeto!</a>
                         </div>
                 </article>
                 
@@ -81,8 +85,8 @@
 
        <!--PARA ONDE JÁ FUI-->
        <section id="ja-fui">
-            <h2>Já fui para</h2>
-            <div id="grade-cards">
+            <h2 id="ja-conheco">Já conheço</h2>
+            <div class="grade-cards">
                 
                 <article class="cards">
                     <div class="imagem">
@@ -92,7 +96,7 @@
                     <div class="texto">
                         <h3>Pernambuco (PE)</h3>
                         No final de ano gosto muito de ir para Pernambuco(PE) para visitar meus avós, tios, primos e comer bastante farofa de feijão que minha vó
-                        <a href="https://www.google.com/maps/dir//Pernambuco/@-6.0129258,-38.3591678,6.55z/data=!4m9!4m8!1m0!1m5!1m1!1s0x7007c9d931c86c5:0x1de0196a93401726!2m2!1d-36.954107!2d-8.8137173!3e3?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
+                        <a href="https://www.google.com/maps/place/Pernambuco/@-6.6156176,-42.1671542,6z/data=!3m1!4b1!4m6!3m5!1s0x7007c9d931c86c5:0x1de0196a93401726!8m2!3d-8.8137173!4d-36.954107!16zL20vMDFoZHBw?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
                     </div>
                 </article>
 
@@ -105,7 +109,7 @@
                     <div class="texto">
                         <h3>Ilha Bela</h3>
                         Já fui para Ilha Bela que fica no litoral de São Paulo (SP) foi a primeira vez que fui na praia e conseguentemente a mais bonita que já vi.
-                        <a href="https://www.google.com/maps/dir//Ilhabela,+S%C3%A3o+Paulo/@-23.622503,-47.4038861,8z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94d299a1e1b58951:0xdb1cb1ae3f4ba322!2m2!1d-45.3667925!2d-23.8165908!3e3?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
+                        <a href="https://www.google.com/maps/place/Ilhabela,+S%C3%A3o+Paulo/@-23.8022971,-45.4096131,13z/data=!3m1!4b1!4m6!3m5!1s0x94d299a1e1b58951:0xdb1cb1ae3f4ba322!8m2!3d-23.8165908!4d-45.3667925!16zL20vMDJ5Zjlw?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
                     </div>
                 </article>
 
@@ -118,15 +122,15 @@
                     <div class="texto">
                         <h3>Monte Verde</h3>
                         Já fui para Monte Verde em Minas para fazer uma trilha de quadriciclo.
-                        <a href="https://www.google.com/maps/dir/-23.4395266,-46.8021339/Monte+Verde,+Camanducaia+-+Minas+Gerais,+37650-000/@-23.1097422,-46.7503396,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94cc103f1694fca5:0xef5416e893de18e0!2m2!1d-46.0386081!2d-22.8632391?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
+                        <a href="https://www.google.com/maps/place/Monte+Verde,+Camanducaia+-+Minas+Gerais,+37650-000/@-22.8671232,-46.0526111,14z/data=!3m1!4b1!4m6!3m5!1s0x94cc103f1694fca5:0xef5416e893de18e0!8m2!3d-22.8632391!4d-46.0386081!16s%2Fg%2F120lqqkw?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
                     </div>
                 </article>
             </div>
        </section>
 
        <!--PARA ONDE QUERO IR-->
-       <section>
-        <h2>Para onde quero ir</h2>
+       <section id="quero-conhecer">
+        <h2>Quero conhecer</h2>
         <div class="grade-cards">
 
             <article class="cards">
@@ -147,7 +151,7 @@
                     </div>
 
                     <div class="texto">
-                        <h3>França</h3>
+                        <h3>Suíça</h3>
                         Quero ir para Suíça para aproveitar a natureza e desfrutar do que o local me proporciona
                         <a href="https://www.google.com/maps/place/Switzerland/@46.7828416,5.5848036,7z/data=!3m1!4b1!4m6!3m5!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512!16zL20vMDZtenA?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa 📍</a>
                     </div>
