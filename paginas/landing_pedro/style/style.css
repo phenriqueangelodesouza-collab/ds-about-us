@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    background-color: #6410C9;
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    line-height: 1.5;
+}
+
+/*configuração header*/
+.header-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 3px solid #F7C80B;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #6410C9;
+}
+
+/*estilização do pedro, no header*/
+.header-class #pedro-link{
+  color: #F7C80B;
+  font-weight: bold;
+  font-size: 175%;
+  text-decoration-color: #6410C9;
+  
+}
+/*estilização dos links do header*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration-color: #6410C9;
+}
+
+/*animação*/
+nav a:hover{
+    text-decoration-color: #F7C80B ;
+    text-underline-offset: 0.2em;
+}
+
+/*destacar o link quando o usuário der um tab*/
+nav a:focus-visible{
+    outline: 2px solid #F7C80B;
+    outline-offset: 4px;
+}
+
+/*configuração descrição*/
+.perfil-class-descricao-filho {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/*foto*/
+.perfil-class-foto img {
+  max-width: 100%;
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: transform 0.32s ease-in-out, box-shadow 0.32s ease-in-out; /*efeito, card subindo*/
+
+}
+/*efeito da foto quando passar o mouse*/
+.perfil-class-foto img:hover, img:focus{
+  border-color: #F7C80B;
+  border-style: solid;
+  border-width: 2px;
+  transform: translateY(-4px); /*deslocamento*/
+}
+
+/*responsividade para a descricao*/
+@media (max-width: 40rem) {
+  .perfil-class-descricao-filho {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*estilização do h1 da página*/
+.perfil-class-descricao h1 {
+  font-size: 400%;
+}
+
+.perfil-class-descricao #pedro {
+  color: #F7C80B;
+}
+
+/*estilização da descrição inicial*/
+.perfil-class-descricao p {
+  font-size: 125%;
+}
+
+/*formatação cards*/
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+
+
+/*formatação imagens*/
+.grade-cards img {
+  display: block;
+  width: 100%;
+}
+
+/*disposição dos cards */
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); /*declaração responsiva, sem necessidade de ajustes*/
+  gap: 1rem;
+}
+
+/*padronizando a altura das imagens*/
+.grade-cards img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+/*tipo de seletor com o atributo (apresentado na nossa apresentação), nesse caso a url da imagem*/
+.grade-cards img[src$="mot.png"] {
+  object-fit: contain;
+}
+
+/*posi~çao da imagem*/
+.grade-cards #imagem img{
+  object-position: center 20%;
+}
+
+
+.grade-cards .texto a {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+/*estilização dos cards*/
+.grade-cards > .cards {
+  background-color: #ffffff;
+  color: #24201c;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.32s ease-in-out, box-shadow 0.32s ease-in-out; /*efeito, card subindo*/
+}
+.grade-cards > .cards .texto {
+  padding: 1rem;
+}
+
+/*efeito da subida, declaração do deslocamento com uma borda quando passar o mouse em cima */
+.cards:hover, .cards:focus {
+  transform: translateY(-6px);
+  border-color: #F7C80B;
+  border-style: solid;
+}
+
+#curiosidades-curiosidades {
+  position: relative;
+}
+
+/*adicionando uma linha embaixo do título do sessão*/
+#curiosidades-curiosidades::after {
+  content: "";
+  position: absolute;
+  inset: auto auto -0.25rem 0;
+  border-bottom: 3px solid #F7C80B;
+  width: 2.5rem;
+}
+
+.main-class {
+  box-sizing: border-box;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.main-class > section + section {
+  margin-top: 2.5rem;
+}
+
+
+/*estilização do rodapé*/
+#footer-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+}
+
+/*estilização dos links*/
+#footer-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/*disposição das imagens com links*/
+#footer-links img {
+  display: block;
+  width: 1.5rem;
+  height: auto;
+}
+
+#footer-links a:focus-visible {
+  outline: 2px solid #6410c9;
+  outline-offset: 4px;
+}
+
+#footer-id {
+  background-color: #f3e8ff;
+  color: #281341;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth; /*deixa a rolagem dos links mais suave, isso na página inteira*/
+}
